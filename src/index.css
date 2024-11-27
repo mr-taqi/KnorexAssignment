@@ -1,0 +1,147 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f3f4f6, #ffffff);
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Container */
+.container {
+  width: 100%;
+  max-width: 600px;
+  background: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+/* Header */
+.header {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #0077b6;
+}
+
+/* Dropdown */
+.dropdown {
+  margin: 20px 0;
+  position: relative;
+}
+
+.select {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 2px solid #0077b6;
+  border-radius: 4px;
+  background-color: #f0f9ff;
+  color: #0077b6;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+}
+
+.select:focus {
+  border-color: #023e8a;
+  box-shadow: 0px 0px 5px rgba(0, 119, 182, 0.5);
+}
+
+/* Weather Card */
+.weather-card {
+  background: #f0f9ff;
+  border: 1px solid #0077b6;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  text-align: left;
+  color: #023e8a;
+}
+
+.weather-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.weather-card p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+/* Forecast Section */
+.forecast {
+  margin-top: 20px;
+}
+
+.forecast-card {
+  background: #caf0f8;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-card h4 {
+  font-size: 1rem;
+  color: #0077b6;
+}
+
+.forecast-card p {
+  font-size: 0.9rem;
+  color: #023e8a;
+}
+
+/* Button (if needed for future features) */
+.button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #0077b6;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.button:hover {
+  background-color: #023e8a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      width: 90%;
+  }
+
+  .header {
+      font-size: 1.5rem;
+  }
+
+  .select {
+      font-size: 0.9rem;
+  }
+
+  .weather-card h3,
+  .forecast-card h4 {
+      font-size: 1rem;
+  }
+
+  .weather-card p,
+  .forecast-card p {
+      font-size: 0.85rem;
+  }
+}
